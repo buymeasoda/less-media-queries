@@ -1,5 +1,5 @@
 
-# CSS and Media Query Strategies
+# CSS and Media Query Strategies Using LESS
 
 How do we create a CSS authoring strategy that:
 
