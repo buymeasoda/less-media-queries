@@ -1,0 +1,77 @@
+
+//
+// Container
+//
+
+#container {
+    color: blue;
+    background-image: url("standard.png");
+}
+
+.320up() {
+    #container {
+        padding: 1em;
+        a {
+            text-decoration: underline;
+        }
+    }
+}
+
+.992up() {
+    #container {
+        padding: 2em;
+    }
+}
+
+//
+// Menu
+//
+
+#menu {
+    color: red;
+}
+
+.320up() {
+    #menu {
+        width: auto;
+    }
+}
+
+.992up() {
+    #menu {
+        width: 500px;
+        background-image: url("menu-desktop.png");
+    }
+}
+
+.all2x() {
+    #menu  {
+        background-image: url("menu@2x.png");
+    }
+}
+
+.320up2x() {
+    #menu {
+        background-image: url("menu-small@2x.png");
+    }
+}
+
+//
+// Button
+//
+
+.button {
+    border-radius: 5px;
+}
+
+.320up() {
+    .button {
+        padding: 2px;
+    }
+}
+
+.992up() {
+    .button {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,32 @@
+#container {
+  color: blue;
+  background-image: url("standard.png");
+}
+#menu {
+  color: red;
+}
+.button {
+  border-radius: 5px;
+}
+#container {
+  padding: 1em;
+}
+#container a {
+  text-decoration: underline;
+}
+#menu {
+  width: auto;
+}
+.button {
+  padding: 2px;
+}
+#container {
+  padding: 2em;
+}
+#menu {
+  width: 500px;
+  background-image: url("menu-desktop.png");
+}
+.button {
+  padding: 5px;
+}

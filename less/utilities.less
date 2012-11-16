@@ -1,0 +1,127 @@
+
+//
+// Settings
+//
+
+@767down: ~"only screen and (max-width: 767px)";
+@320up: ~"only screen and (min-width: 320px)";
+@480up: ~"only screen and (min-width: 480px)";
+@768up: ~"only screen and (min-width: 768px)";
+@992up: ~"only screen and (min-width: 992px)";
+@1200up: ~"only screen and (min-width: 1200px)";
+@1320up: ~"only screen and (min-width: 1320px)";
+
+@2x: ~"only screen and (min-device-pixel-ratio: 1.3)",
+     ~"only screen and (-webkit-min-device-pixel-ratio: 1.3)",
+     ~"only screen and (-o-min-device-pixel-ratio: 13/10)",
+     ~"only screen and (min-resolution: 120dpi)";
+
+
+//
+// Variables
+//
+
+// Standard
+
+.767down() {}
+.320up() {}
+.480up() {}
+.768up() {}
+.992up() {}
+.1200up() {}
+.1320up() {}
+
+// Retina
+
+.all2x() {}
+.767down2x() {}
+.320up2x() {}
+.480up2x() {}
+.768up2x() {}
+.992up2x() {}
+.1200up2x() {}
+.1320up2x() {}
+
+
+//
+// Output
+//
+
+// Legacy
+
+.legacyStyles() {
+    .320up;
+    .480up;
+    .768up;
+    .992up;
+}
+
+// Modern
+
+.modernStyles() {
+
+    // Standard
+
+    @media @767down {
+        .767down;
+    }
+
+    @media @320up {
+        .320up;
+    }
+
+    @media @480up {
+        .480up;
+    }
+
+    @media @768up {
+        .768up;
+    }
+
+    @media @992up {
+        .992up;
+    }
+
+    @media @1200up {
+        .1200up;
+    }
+
+    @media @1320up {
+        .1320up;
+    }
+
+    // Retina
+
+    @media @2x {
+        .all2x;
+    }
+
+    @media @2x, @767down {
+        .767down2x;
+    }
+
+    @media @2x, @320up {
+        .320up2x;
+    }
+
+    @media @2x, @480up {
+        .480up2x;
+    }
+
+    @media @2x, @768up {
+        .768up2x;
+    }
+
+    @media @2x, @992up {
+        .992up2x;
+    }
+
+    @media @2x, @1200up {
+        .1200up2x;
+    }
+
+    @media @2x, @1320up {
+        .1320up2x;
+    }
+
+}
