@@ -1,16 +1,16 @@
 
 # CSS and Media Query Strategies Using LESS
 
-How do we create a CSS authoring strategy that:
+How can we create a CSS authoring strategy that will:
 
-* Allows non-media query capable browsers (such as IE) to get the "Desktop" version of the layout (making "mobile first" not an option)
-* Avoids smaller form factors (eg. handheld) having to excessively override a desktop first strategy (making "desktop first" not an option)
-* Lets CSS widgets and components be self contained with their rules grouped together for different targeted resolutions and dimensions
-* Efficiently outputs media queries, collating together queries of the same type into single blocks rather than multiple repeating media query definitions
-* Makes it easy to change the media query rules for retina triggering or other breakpoints
-* Is transparent to developers and designers while authoring
-* Maintains as much of the natural order of CSS as possible (eg. retain cascade order)
-* Allows for the result to be efficiently concatenated and minified for optimal delivery over the wire
+* Allow non-media query capable browsers (such as Internet Exploere 8 and earlier) to receive the "Desktop" version of a layout, rather than the "mobile first" layout
+* Avoid having to excessively override a desktop first strategy when styling for smaller form factors
+* Let CSS widgets and components remain self contained with their rules grouped together for different targeted resolutions and dimensions
+* Efficiently output media queries, collating together queries of the same type into single blocks rather than multiple repeating media query definitions
+* Make it easy to change the media query rules for breakpoints or retina
+* Remain transparent to developers and designers while authoring
+* Maintain as much of the natural order of CSS as possible (eg. retain cascade order)
+* Allow the result to be efficiently concatenated and minified for optimal delivery over the wire
 
 What follows is an exploration of using LESS to achieve as many of these goals as possible.
 
